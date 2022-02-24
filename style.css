@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(187, 187, 187);
+}
+
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    margin: 350px;
+  }
+  
+  .grid-item {
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(39, 39, 39);
+    
+  }
+  .noDisplay {
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(131, 131, 131);
+  }
